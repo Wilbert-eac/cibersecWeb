@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberseguridad y Continuidad de Negocio para PyMEs | Sentinel</title>
+    <meta name="description"
+        content="Protegemos la operación de tu PyME en México. Evita ransomware, robos y caídas del sistema con nuestra protección perimetral y soporte administrado.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Background Canvas for Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#hero" class="logo">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="url(#logo-grad)" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 8v8M9 12h6" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" />
+                        <defs>
+                            <linearGradient id="logo-grad" x1="4" y1="2" x2="20" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#8b5cf6" />
+                                <stop offset="1" stop-color="#d946ef" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">WMG<span>.</span></span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link active">Inicio</a>
+                <a href="#despertar" class="nav-link">Riesgos México</a>
+                <a href="#versus" class="nav-link">¿Cómo funciona?</a>
+                <a href="#impacto" class="nav-link">Impacto</a>
+                <a href="#soluciones" class="nav-link">Soluciones</a>
+                <a href="#faq" class="nav-link">Preguntas</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-primary btn-sm btn-modal-trigger">Evaluar mi Riesgo</button>
+                <button class="mobile-menu-toggle" aria-label="Menu de Navegación">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav">
+        <button class="mobile-nav-close">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="mobile-nav-links">
+            <a href="#hero" class="mobile-nav-link">Inicio</a>
+            <a href="#despertar" class="mobile-nav-link">Riesgos México</a>
+            <a href="#versus" class="mobile-nav-link">¿Cómo funciona?</a>
+            <a href="#impacto" class="mobile-nav-link">Impacto</a>
+            <a href="#soluciones" class="mobile-nav-link">Soluciones</a>
+            <a href="#faq" class="mobile-nav-link">Preguntas</a>
+            <button class="btn btn-primary btn-full btn-modal-trigger">Evaluar mi Riesgo Hoy (Gratis)</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- SECTION 1: HERO -->
+        <section id="hero" class="hero-section">
+            <div class="glow-orb hero-glow-1"></div>
+            <div class="glow-orb hero-glow-2"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="tag-badge"><i data-lucide="shield-check"></i> PROTECCIÓN DE NEGOCIO EN
+                            MÉXICO</span>
+                    </div>
+                    <h1 class="hero-title">
+                        La ciberseguridad no es proteger computadoras, es proteger la <span>continuidad de tu
+                            negocio</span>.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Ayudamos a las PyMEs en México a blindar su operación para que un ataque digital nunca detenga
+                        sus ventas, cobros ni entregas.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-lg btn-modal-trigger btn-glow">
+                            <span>Evaluar mi Riesgo Hoy (Gratis)</span>
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                        <a href="#despertar" class="btn btn-secondary btn-lg">
+                            <span>Ver Estadísticas</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <!-- Tech visual ring and shield in center -->
+                    <div class="radar-container">
+                        <div class="radar-ring r1"></div>
+                        <div class="radar-ring r2"></div>
+                        <div class="radar-ring r3"></div>
+                        <div class="radar-scan"></div>
+                        <div class="radar-center">
+                            <i data-lucide="shield" class="shield-main-icon"></i>
+                        </div>
+                        <div class="radar-node node-1"><i data-lucide="server"></i></div>
+                        <div class="radar-node node-2"><i data-lucide="laptop"></i></div>
+                        <div class="radar-node node-3"><i data-lucide="smartphone"></i></div>
+                        <div class="radar-node node-4"><i data-lucide="database"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: EL DESPERTAR -->
+        <section id="despertar" class="despertar-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">EL DESPERTAR</span>
+                    <h2 class="section-title">El Panorama Digital de México en 2025</h2>
+                    <p class="section-desc">Las cifras no mienten. El peligro digital en México ha dejado de ser una
+                        hipótesis y se ha convertido en la mayor amenaza para el crecimiento de las PyMEs.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <!-- Card 1 -->
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="40000" data-suffix=" Millones+">0</h3>
+                        <p class="stat-title">Intentos de ciberataques</p>
+                        <p class="stat-desc">Registrados en México solo en el primer semestre de 2025. Los ataques
+                            masivos automatizados ocurren cada segundo.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="stat-card featured-stat">
+                        <div class="stat-badge">Mayor Amenaza</div>
+                        <div class="stat-icon-wrapper">
+                            <i data-lucide="skull"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="74" data-suffix="%">0</h3>
+                        <p class="stat-title">Empresas mexicanas atacadas</p>
+                        <p class="stat-desc">Han sufrido algún secuestro de información o secuestro de red (ransomware)
+                            en el último año.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <i data-lucide="alert-triangle"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="40" data-suffix="%">0</h3>
+                        <p class="stat-title">Ataques dirigidos a PyMEs</p>
+                        <p class="stat-desc">De los ciberataques apuntan a pequeñas empresas. Solo el
+                            <strong>14%</strong> está preparada, y el <strong>80%</strong> cree erróneamente que no es
+                            de interés para hackers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: LA ANALOGÍA EXPLICATIVA (VERSUS SLIDER) -->
+        <section id="versus" class="versus-section">
+            <div class="glow-orb versus-glow"></div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">LA ANALOGÍA</span>
+                    <h2 class="section-title">¿Cómo Funciona la Seguridad de tu Red?</h2>
+                    <p class="section-desc">Entender la ciberseguridad es simple si dejamos atrás los tecnicismos
+                        complejos de la informática.</p>
+                </div>
+
+                <!-- Slider Container -->
+                <div class="comparison-slider-wrapper">
+                    <div class="comparison-slider-container" id="versus-slider">
+                        <!-- Before: Tu modem actual -->
+                        <div class="slide-pane before-pane">
+                            <div class="pane-content-wrapper">
+                                <div class="pane-badge badge-risk"><i data-lucide="x-circle"></i> EL RIESGO ACTUAL</div>
+                                <h3 class="pane-title text-risk">Tu módem convencional</h3>
+                                <p class="pane-description">Es como tener una <strong>puerta de cristal</strong> en tu
+                                    oficina: cualquiera puede ver hacia adentro y entrar con un simple empujón. No
+                                    filtra el tráfico, no valida accesos y expone tus datos valiosos.</p>
+
+                                <div class="visual-element-before">
+                                    <div class="glass-door-container">
+                                        <div class="glass-door">
+                                            <div class="glass-crack"></div>
+                                        </div>
+                                        <div class="threat-arrows">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- After: La Solución (Firewall NGFW) -->
+                        <div class="slide-pane after-pane">
+                            <div class="pane-content-wrapper">
+                                <div class="pane-badge badge-secure"><i data-lucide="check-circle2"></i> LA SOLUCIÓN
+                                    SENSIBLE</div>
+                                <h3 class="pane-title text-secure">Protección Perimetral (NGFW)</h3>
+                                <p class="pane-description">Es como tener una <strong>aduana inteligente</strong> en la
+                                    entrada. Un agente profesional que revisa exhaustivamente cada maleta (paquete de
+                                    datos) que entra y sale, deteniendo cualquier amenaza antes de que pise tu oficina.
+                                </p>
+
+                                <div class="visual-element-after">
+                                    <div class="custom-border-glow">
+                                        <div class="secure-gate">
+                                            <div class="pulse-ring"></div>
+                                            <div class="shield-scan-line"></div>
+                                        </div>
+                                        <div class="filtered-packets">
+                                            <span class="packet blocked"></span>
+                                            <span class="packet allowed"></span>
+                                            <span class="packet blocked"></span>
+                                            <span class="packet allowed"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slider Handle -->
+                        <div class="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-button">
+                                <i data-lucide="chevrons-left-right"></i>
+                            </div>
+                            <div class="handle-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: IMPACTO OPERATIVO -->
+        <section id="impacto" class="impacto-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">IMPACTO REAL</span>
+                    <h2 class="section-title">Lo que Realmente Duele a tu Empresa</h2>
+                    <p class="section-desc">Un hackeo no es solo un problema de sistemas. Es una crisis de negocio con
+                        consecuencias financieras y legales devastadoras.</p>
+                </div>
+
+                <div class="impacto-grid">
+                    <!-- Item 1 -->
+                    <div class="impacto-card">
+                        <div class="impacto-icon bg-red">
+                            <i data-lucide="ban"></i>
+                        </div>
+                        <h3 class="impacto-title">Paro de Operación</h3>
+                        <p class="impacto-desc">Si te hackean, tu sistema de facturación se cae. <strong>No cobras, no
+                                vendes ni entregas mercancía</strong>, pero tu nómina, renta e impuestos se siguen
+                            pagando cada día que estás fuera de servicio.</p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="impacto-card">
+                        <div class="impacto-icon bg-purple">
+                            <i data-lucide="key-round"></i>
+                        </div>
+                        <h3 class="impacto-title">Robo de Propiedad Intelectual</h3>
+                        <p class="impacto-desc">Tus diseños, patentes, listas de precios confidenciales y bases de datos
+                            de clientes terminan en manos de tu competencia o publicados en la <strong>Dark Web</strong>
+                            al mejor postor.</p>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="impacto-card">
+                        <div class="impacto-icon bg-amber">
+                            <i data-lucide="scale"></i>
+                        </div>
+                        <h3 class="impacto-title">Multas Millonarias</h3>
+                        <p class="impacto-desc">El gobierno impone severas sanciones económicas ante la filtración de
+                            información confidencial de clientes o empleados, regulado bajo la <strong>Ley de Protección
+                                de Datos Personales en México</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: SOLUCIONES A LA MEDIDA -->
+        <section id="soluciones" class="soluciones-section">
+            <div class="glow-orb soluciones-glow"></div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">NUESTRAS SOLUCIONES</span>
+                    <h2 class="section-title">Blindaje de Operación PyME</h2>
+                    <p class="section-desc">Servicios de seguridad gestionada diseñados para la tranquilidad y
+                        continuidad operativa de tu empresa, sin tecnicismos complejos.</p>
+                </div>
+
+                <!-- Tabs Container -->
+                <div class="tabs-container">
+                    <div class="tabs-header">
+                        <div class="tabs-slider-bg"></div>
+                        <button class="tab-btn active" data-tab="ngfw">
+                            <i data-lucide="shield-alert"></i>
+                            <span>Firewalls (NGFW)</span>
+                        </button>
+                        <button class="tab-btn" data-tab="endpoint">
+                            <i data-lucide="monitor-play"></i>
+                            <span>Endpoints (EDR/XDR)</span>
+                        </button>
+                        <button class="tab-btn" data-tab="drp">
+                            <i data-lucide="database-backup"></i>
+                            <span>Respaldos y DRP</span>
+                        </button>
+                        <button class="tab-btn" data-tab="risk">
+                            <i data-lucide="file-search2"></i>
+                            <span>Evaluaciones de Riesgo</span>
+                        </button>
+                    </div>
+
+                    <div class="tabs-content">
+                        <!-- Tab 1: NGFW -->
+                        <div class="tab-panel active" id="ngfw">
+                            <div class="panel-layout">
+                                <div class="panel-info">
+                                    <h3 class="panel-title">Firewalls de Nueva Generación (NGFW)</h3>
+                                    <p class="panel-subtitle">Tu aduana perimetral contra intrusos digitales</p>
+                                    <p class="panel-text">Instalamos y gestionamos un escudo inteligente en el acceso de
+                                        red de tu oficina. Este sistema analiza en tiempo real el tráfico web de tu
+                                        empresa para bloquear ataques antes de que ingresen.</p>
+                                    <ul class="panel-features">
+                                        <li><i data-lucide="check"></i> Bloqueo automático de sitios web peligrosos.
+                                        </li>
+                                        <li><i data-lucide="check"></i> Control total de aplicaciones en la red
+                                            corporativa.</li>
+                                        <li><i data-lucide="check"></i> VPNs seguras para empleados en modalidad remota.
+                                        </li>
+                                        <li><i data-lucide="check"></i> Reporte ejecutivo mensual de amenazas
+                                            neutralizadas.</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-modal-trigger">Evaluar Criterio de Red</button>
+                                </div>
+                                <div class="panel-visual">
+                                    <div class="cyber-graphic nfgw-graphic">
+                                        <div class="radar-pulse"></div>
+                                        <i data-lucide="shield-check" class="shield-hex"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: Endpoint -->
+                        <div class="tab-panel" id="endpoint">
+                            <div class="panel-layout">
+                                <div class="panel-info">
+                                    <h3 class="panel-title">Protección Endpoint (EDR/XDR)</h3>
+                                    <p class="panel-subtitle">Seguridad avanzada en las computadoras de tu equipo</p>
+                                    <p class="panel-text">Los antivirus tradicionales ya no son suficientes. Protegemos
+                                        las laptops, PCs y servidores de tu negocio con agentes de respuesta inteligente
+                                        que aíslan de inmediato cualquier virus o intento de ransomware.</p>
+                                    <ul class="panel-features">
+                                        <li><i data-lucide="check"></i> Inteligencia artificial que detecta
+                                            comportamientos sospechosos.</li>
+                                        <li><i data-lucide="check"></i> Aislamiento inmediato de computadoras
+                                            infectadas.</li>
+                                        <li><i data-lucide="check"></i> Defensa contra ataques de día cero (amenazas
+                                            nuevas).</li>
+                                        <li><i data-lucide="check"></i> Monitoreo centralizado por expertos de
+                                            seguridad.</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-modal-trigger">Asegurar Computadoras</button>
+                                </div>
+                                <div class="panel-visual">
+                                    <div class="cyber-graphic endpoint-graphic">
+                                        <div class="devices-grid">
+                                            <i data-lucide="laptop" class="active-node"></i>
+                                            <i data-lucide="monitor" class="active-node"></i>
+                                            <i data-lucide="server" class="active-node"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 3: DRP -->
+                        <div class="tab-panel" id="drp">
+                            <div class="panel-layout">
+                                <div class="panel-info">
+                                    <h3 class="panel-title">Respaldos y Plan de Recuperación (DRP)</h3>
+                                    <p class="panel-subtitle">El seguro de vida para la información crítica de tu PyME
+                                    </p>
+                                    <p class="panel-text">Garantizamos que tu base de datos de clientes, facturas y
+                                        archivos de negocio se puedan restaurar en horas, no semanas, en caso de un
+                                        borrado accidental o un ataque informático severo.</p>
+                                    <ul class="panel-features">
+                                        <li><i data-lucide="check"></i> Respaldos automáticos en la nube y locales
+                                            cifrados.</li>
+                                        <li><i data-lucide="check"></i> Plan de Recuperación ante Desastres (DRP)
+                                            estructurado.</li>
+                                        <li><i data-lucide="check"></i> Pruebas periódicas de restauración garantizadas.
+                                        </li>
+                                        <li><i data-lucide="check"></i> Protección contra borrado intencional de
+                                            empleados.</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-modal-trigger">Garantizar mis Respaldos</button>
+                                </div>
+                                <div class="panel-visual">
+                                    <div class="cyber-graphic drp-graphic">
+                                        <div class="backup-arrow">
+                                            <i data-lucide="database"></i>
+                                            <div class="arrow-motion">➡️</div>
+                                            <i data-lucide="cloud"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 4: Risk -->
+                        <div class="tab-panel" id="risk">
+                            <div class="panel-layout">
+                                <div class="panel-info">
+                                    <h3 class="panel-title">Evaluaciones de Riesgo Continuas</h3>
+                                    <p class="panel-subtitle">Diagnósticos para saber exactamente dónde eres vulnerable
+                                    </p>
+                                    <p class="panel-text">Analizamos tu infraestructura de red y los hábitos de tu
+                                        equipo para emitir un mapa de riesgos priorizado. Sabrás dónde tienes las
+                                        puertas abiertas antes de que un delincuente las encuentre.</p>
+                                    <ul class="panel-features">
+                                        <li><i data-lucide="check"></i> Escaneo de vulnerabilidades externas en tu red.
+                                        </li>
+                                        <li><i data-lucide="check"></i> Simulación de ataques de phishing para entrenar
+                                            empleados.</li>
+                                        <li><i data-lucide="check"></i> Reportes sencillos traducidos a impacto
+                                            financiero.</li>
+                                        <li><i data-lucide="check"></i> Ruta de corrección paso a paso (Roadmap de
+                                            seguridad).</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-modal-trigger">Solicitar Diagnóstico</button>
+                                </div>
+                                <div class="panel-visual">
+                                    <div class="cyber-graphic risk-graphic">
+                                        <div class="risk-scanner">
+                                            <i data-lucide="shield-alert" class="scanning-shield"></i>
+                                            <div class="laser-beam"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: FAQ ACCORDION -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">DERRIBADOR DE OBJECIONES</span>
+                    <h2 class="section-title">Preguntas Frecuentes sobre Seguridad</h2>
+                    <p class="section-desc">Aclara las dudas más comunes de los dueños de negocios sobre la seguridad
+                        digital de sus operaciones.</p>
+                </div>
+
+                <div class="faq-accordion">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="accordion-question">Somos una empresa pequeña, ¿a los hackers realmente les
+                                interesamos?</span>
+                            <span class="accordion-icon"><i data-lucide="chevron-down"></i></span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p><strong>Totalmente.</strong> Los hackers modernos no seleccionan sus víctimas de
+                                    forma manual. Utilizan "bots" automáticos que escanean millones de direcciones IP en
+                                    todo México buscando puertos abiertos y sistemas sin actualizar. Si tu red está
+                                    desprotegida, entrarán automáticamente, cifrarán tu información e intentarán
+                                    extorsionarte sin importar si tienes 5 o 500 empleados.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="accordion-question">Toda mi información está en Google Drive/Dropbox, ¿ahí ya
+                                estoy seguro?</span>
+                            <span class="accordion-icon"><i data-lucide="chevron-down"></i></span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p><strong>No necesariamente.</strong> Los servidores de Google o Dropbox son muy
+                                    seguros, pero tu acceso local es el eslabón débil. Si una computadora de tu oficina
+                                    se infecta con ransomware (virus secuestrador), el virus detectará la carpeta
+                                    sincronizada en tu computadora y cifrará los archivos locales. La sincronización
+                                    automática subirá de inmediato los archivos dañados a la nube, reemplazando tus
+                                    archivos sanos por archivos bloqueados.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="accordion-question">Llevamos 10 años operando así y nunca nos ha pasado
+                                nada...</span>
+                            <span class="accordion-icon"><i data-lucide="chevron-down"></i></span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p><strong>Eso es como manejar un automóvil sin seguro.</strong> Es probable que pases
+                                    años sin chocar, pero el día que ocurra un accidente grave, la pérdida económica
+                                    puede ser total. Con el crecimiento exponencial del cibercrimen en México, no tener
+                                    seguridad estructurada no garantiza inmunidad, solo significa que has tenido suerte.
+                                    Un solo ataque de ransomware puede llevar a la quiebra a una PyME en menos de 7
+                                    días.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: CIERRE Y CONTACTO -->
+        <section id="contacto" class="contacto-section">
+            <div class="glow-orb contacto-glow"></div>
+            <div class="container">
+                <div class="contacto-wrapper">
+                    <div class="contacto-content">
+                        <h2 class="contacto-title">
+                            Si mañana al llegar a la oficina todas tus computadoras piden un rescate en dólares para
+                            dejarte trabajar...
+                        </h2>
+                        <p class="contacto-urgency-question">¿Cuál es tu Plan B?</p>
+                        <p class="contacto-desc">
+                            No arriesgues las ventas ni la reputación que te ha tomado años construir. Solicita un
+                            diagnóstico inicial gratuito y conoce los puntos débiles de tu red corporativa antes de que
+                            lo haga un hacker.
+                        </p>
+
+                        <div class="contact-badges">
+                            <div class="c-badge">
+                                <i data-lucide="clock"></i>
+                                <span>Reporte en 24h</span>
+                            </div>
+                            <div class="c-badge">
+                                <i data-lucide="shield-check"></i>
+                                <span>100% Confidencial</span>
+                            </div>
+                            <div class="c-badge">
+                                <i data-lucide="check-circle2"></i>
+                                <span>Sin Compromiso</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacto-form-container">
+                        <h3 class="form-title">Solicita tu Diagnóstico Gratuito</h3>
+                        <p class="form-subtitle">Completa el formulario para agendar una llamada con un especialista.
+                        </p>
+
+                        <form id="lead-form" class="contacto-form">
+                            <div class="form-group">
+                                <label for="form-name">Nombre Completo</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="user"></i>
+                                    <input type="text" id="form-name" name="name" placeholder="Ej. Juan Pérez" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email">Correo Electrónico de Negocio</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="mail"></i>
+                                    <input type="email" id="form-email" name="email"
+                                        placeholder="Ej. juan@miempresa.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-phone">Teléfono de Contacto (WhatsApp)</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="phone"></i>
+                                    <input type="tel" id="form-phone" name="phone" placeholder="Ej. 55 1234 5678"
+                                        required>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full btn-glow">
+                                <span>Quiero un Diagnóstico de Seguridad Gratuito</span>
+                                <i data-lucide="arrow-right"></i>
+                            </button>
+                        </form>
+
+                        <!-- Form Success Message -->
+                        <div class="form-success-alert" id="form-success">
+                            <div class="success-icon">
+                                <i data-lucide="check-circle2"></i>
+                            </div>
+                            <h4>¡Solicitud Recibida Exitosamente!</h4>
+                            <p>Un ingeniero de seguridad se pondrá en contacto contigo vía WhatsApp o correo electrónico
+                                en las próximas 24 horas hábiles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-alert-box">
+                <div class="alert-pulse-circle"></div>
+                <div class="footer-alert-content">
+                    <span class="alert-title">ALERTA RECIENTE EN MÉXICO:</span>
+                    <p class="alert-text">El grupo de ransomware RansomHub y BlackCat han incrementado sus ataques
+                        dirigidos a proveedores de servicios y PyMEs mexicanas en 2025 y 2026. La prevención perimetral
+                        es hoy la única barrera efectiva.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#8b5cf6" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>WMG CIBERSEGURIDAD</span>
+                </div>
+                <p class="copyright">&copy; 2026 WMG. Todos los derechos reservados. Diseñado para la continuidad PyME
+                    en México.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE QUIZ MODAL -->
+    <div class="modal-overlay" id="quiz-modal">
+        <div class="modal-box">
+            <button class="modal-close-btn" aria-label="Cerrar modal">
+                <i data-lucide="x"></i>
+            </button>
+
+            <div class="modal-header">
+                <span class="modal-badge"><i data-lucide="shield-question"></i> DIAGNÓSTICO EXPRESS</span>
+                <h3 class="modal-title">Evalúa tu Nivel de Riesgo Digital</h3>
+                <p class="modal-subtitle">Responde 3 preguntas rápidas para medir la vulnerabilidad de tu empresa.</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="modal-progress-bar">
+                <div class="progress-fill" id="quiz-progress"></div>
+            </div>
+
+            <!-- Quiz Steps -->
+            <div class="quiz-steps-container">
+                <!-- Step 1 -->
+                <div class="quiz-step active" data-step="1">
+                    <h4 class="step-question">1. ¿Qué tipo de seguridad tienes implementada en los equipos de tus
+                        empleados?</h4>
+                    <div class="quiz-options">
+                        <button class="option-btn" data-score="10" data-value="Antivirus básico">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">Antivirus básico (de licencia estándar o gratuito)</span>
+                            <span class="option-check"><i data-lucide="circle"></i></span>
+                        </button>
+                        <button class="option-btn" data-score="0" data-value="EDR administrado">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">Protección EDR avanzada con monitoreo experto</span>
+                            <span class="option-check"><i data-lucide="circle"></i></span>
+                        </button>
+                        <button class="option-btn" data-score="20" data-value="Ninguno / Desconocido">
+                            <span class="option-letter">C</span>
+                            <span class="option-text">Ninguno, cada empleado es responsable de su equipo</span>
+                            <span class="option-check"><i data-lucide="circle"></i></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="quiz-step" data-step="2">
+                    <h4 class="step-question">2. Si tu red de la oficina se infecta con ransomware hoy, ¿qué ocurriría
+                        con tus respaldos?</h4>
+                    <div class="quiz-options">
+                        <button class="option-btn" data-score="15" data-value="Están en nube síncrona">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">Se perderían, porque están en Google Drive / Dropbox sincronizados
+                                automáticamente</span>
+                            <span class="option-check"><i data-lucide="circle"></i></span>
+                        </button>
+                        <button class="option-btn" data-score="0" data-value="Aislados e inmutables">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">Se restauran en horas, tenemos respaldos inmutables fuera de la
+                                red</span>
+                            <span class="option-check"><i data-lucide="circle"></i></span>
+                        </button>
+                        <button class="option-btn" data-score="25" data-value="No tenemos respaldos">
+                            <span class="option-letter">C</span>
+                            <span class="option-text">No tenemos respaldos actualizados de la información crítica</span>
+                            <span class="option-check"><i data-lucide="circle"></i></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="quiz-step" data-step="3">
+                    <h4 class="step-question">3. ¿Cómo proteges la entrada de datos (conexión a internet) en tu oficina?
+                    </h4>
+                    <div class="quiz-options">
+                        <button class="option-btn" data-score="20" data-value="Módem de Telmex/Totalplay">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">Solo con el módem básico de la compañía telefónica</span>
+                            <span class="option-check"><i data-lucide="circle"></i></span>
+                        </button>
+                        <button class="option-btn" data-score="0" data-value="Firewall perimetral">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">Tenemos un Firewall físico de Nueva Generación configurado por un
+                                experto</span>
+                            <span class="option-check"><i data-lucide="circle"></i></span>
+                        </button>
+                        <button class="option-btn" data-score="10" data-value="No lo sé">
+                            <span class="option-letter">C</span>
+                            <span class="option-text">No sé qué tipo de protección o filtrado de red tenemos
+                                activo</span>
+                            <span class="option-check"><i data-lucide="circle"></i></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Results & Lead Form integration -->
+                <div class="quiz-step" data-step="4">
+                    <div class="quiz-result-container">
+                        <!-- High Risk Gauge visual -->
+                        <div class="risk-gauge-wrapper">
+                            <div class="gauge-meter">
+                                <svg width="150" height="75" viewBox="0 0 150 75" style="overflow: visible;">
+                                    <path d="M 15,75 A 60,60 0 0,1 135,75" fill="none" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="12" stroke-linecap="round" />
+                                    <path id="gauge-arc" d="M 15,75 A 60,60 0 0,1 135,75" fill="none"
+                                        stroke="url(#gauge-gradient)" stroke-width="12" stroke-linecap="round"
+                                        stroke-dasharray="188.5" stroke-dashoffset="188.5"
+                                        style="transition: stroke-dashoffset 1s ease-in-out;" />
+                                    <defs>
+                                        <linearGradient id="gauge-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#10b981" />
+                                            <stop offset="50%" stop-color="#f59e0b" />
+                                            <stop offset="100%" stop-color="#f43f5e" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="gauge-cover">
+                                    <span id="risk-score-value">0%</span>
+                                </div>
+                            </div>
+                            <div class="gauge-label text-risk" id="risk-level-label">Riesgo Alto</div>
+                        </div>
+
+                        <p class="result-message" id="risk-result-msg">
+                            Tu oficina está expuesta a ataques automáticos. Tu módem actual no filtra tráfico de salida
+                            ni entrada, y no contar con protección de endpoints te hace blanco fácil de ransomware.
+                        </p>
+
+                        <div class="result-cta-form">
+                            <p class="cta-message">Completa tus datos para recibir un **Reporte Detallado de Brechas de
+                                Seguridad** y una consultoría gratuita vía WhatsApp.</p>
+                            <form id="modal-lead-form">
+                                <input type="hidden" id="quiz-answers" name="quiz_summary" value="">
+                                <input type="hidden" id="quiz-risk-score" name="quiz_score" value="">
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" id="modal-name" name="name" placeholder="Nombre completo"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="form-row-2">
+                                    <div class="form-group">
+                                        <input type="email" id="modal-email" name="email"
+                                            placeholder="Correo corporativo" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" id="modal-phone" name="phone" placeholder="WhatsApp" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-full btn-glow">
+                                    <span>Solicitar Mi Reporte y Diagnóstico Gratis</span>
+                                    <i data-lucide="send"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Footer / Navigation buttons -->
+            <div class="modal-footer" id="quiz-navigation">
+                <button class="btn btn-secondary btn-sm" id="quiz-prev-btn" disabled>Atrás</button>
+                <button class="btn btn-primary btn-sm" id="quiz-next-btn">Siguiente</button>
+            </div>
+
+            <!-- Modal Success State -->
+            <div class="modal-success-state" id="modal-success">
+                <div class="success-illustration">
+                    <div class="shield-check-ring">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                </div>
+                <h3>¡Diagnóstico Agendado con Éxito!</h3>
+                <p class="success-text">Hemos procesado tu nivel de vulnerabilidad. Un analista de Sentinel en México
+                    revisará tus respuestas y te enviará un reporte inicial por WhatsApp/Correo en menos de 24 horas.
+                </p>
+                <button class="btn btn-secondary modal-close-btn-action">Entendido, cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Javascript File -->
+    <script src="app.js"></script>
+</body>
+
+</html>
